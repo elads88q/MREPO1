@@ -6,8 +6,8 @@ jobs:
     machine: true
     steps:
       - checkov/scan:
-          api-key: 6bridgecrew-9example-2api-key1-demo9
-          directory: ./terragpat
+          api-key: 
+          directory: 
           output: json
-          repo-id: bridgecrewio/terragpat
-          soft-fail: true
+          repo-id: https://github.com/elads88q/MREPO1
+          soft-fail: false
