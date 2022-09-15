@@ -1,14 +1,13 @@
-version: '2.1'
+version: 2.1
 orbs:
-  bridgecrew: bridgecrew/bridgecrew@1.0.5
+  checkov: bridgecrew/checkov@0.0.4
 jobs:
   build:
     machine: true
     steps:
-      - checkout
-      - bridgecrew/install
-      - bridgecrew/scan:
-          api-key-variable: BC_API_KEY
-          directory: .
-workflows: null
-
+      - checkov/scan:
+          api-key: 6bridgecrew-9example-2api-key1-demo9
+          directory: ./terragpat
+          output: json
+          repo-id: bridgecrewio/terragpat
+          soft-fail: true
