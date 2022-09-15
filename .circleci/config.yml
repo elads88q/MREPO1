@@ -7,7 +7,8 @@ jobs:
     steps:
       - checkov/scan:
           api-key: 
-          directory: 
+          directory: ./MREPO1
+          file: 
           output: json
-          repo-id: https://github.com/elads88q/MREPO1
+          repo-id: 
           soft-fail: false
