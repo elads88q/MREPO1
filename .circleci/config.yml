@@ -2,13 +2,20 @@ version: 2.1
 orbs:
   checkov: bridgecrew/checkov@0.0.4
 jobs:
-  build:
+ build:
     machine: true
     steps:  
+       - run:
+            command: pip install -U checkov
+            name: Install Checkov 
+build:
+     machine: true
+     steps:
       - checkov/scan:
-          api-key: 
-          directory: ./MREPO1
+          api-key:
+          directory: 
           output: json
-          repo-id:
+          repo-id: 
           soft-fail: false
+
    
