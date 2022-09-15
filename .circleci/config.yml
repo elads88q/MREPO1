@@ -5,9 +5,6 @@ jobs:
   build:
     machine: true
     steps:  
-      - run:
-          command: pip install -U checkov
-          name: Install Checkov
       - checkov/scan:
           api-key: 
           directory: ./MREPO1
