@@ -1,2 +1,2 @@
-a = "HELLO EVERYONE!!!!!"
-print (a)
+a = "hello everyone"
+print(a)
