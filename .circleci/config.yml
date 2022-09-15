@@ -3,12 +3,6 @@ orbs:
   checkov: bridgecrew/checkov@0.0.4
 jobs:
  build:
-    machine: true
-    steps:  
-       - run:
-            command: pip install -U checkov
-            name: Install Checkov 
-build:
      machine: true
      steps:
       - checkov/scan:
